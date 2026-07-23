@@ -102,6 +102,8 @@ a:hover { text-decoration: underline; }
 .main-nav a:hover { color: #fff; text-decoration: none; }
 .main-nav .btn { padding: 9px 20px; font-size: 14px; }
 
+.nav-phone { font-variant-numeric: tabular-nums; opacity: .85; }
+
 .lang-switch {
   font-size: 13px; font-weight: 600; letter-spacing: .06em;
   border: 1px solid rgba(91,184,245,.4); border-radius: 999px;
@@ -380,6 +382,24 @@ form textarea { min-height: 130px; resize: vertical; }
 .site-footer .container { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
 .site-footer a { color: var(--pale); }
 .site-footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 780px; margin-top: 36px; }
+.faq details {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 18px 22px; margin-bottom: 12px; background: var(--paper);
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.faq details[open] { border-color: var(--cloud); box-shadow: var(--shadow); }
+.faq summary {
+  cursor: pointer; font-weight: 600; font-family: "Outfit", sans-serif;
+  font-size: 17px; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-size: 22px; font-weight: 800; color: var(--primary); flex-shrink: 0; }
+.faq details[open] summary::after { content: "–"; color: var(--sun); }
+.faq details p { color: var(--ink-soft); margin-top: 10px; font-size: 15.5px; }
 
 /* ---------- Apuluokat ---------- */
 .breadcrumb { font-size: 14px; color: rgba(168,220,247,.7); margin-bottom: 18px; }
