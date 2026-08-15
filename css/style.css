@@ -447,3 +447,11 @@ form textarea { min-height: 130px; resize: vertical; }
   .journey-item:nth-child(even) .journey-card::after { left: -28px; right: auto; transform: translateX(-50%); }
   .journey-extra ul { columns: 1; }
 }
+
+/* ---------- Hinnat ---------- */
+.card-price {
+  font-size: 14px; font-weight: 700; color: var(--sun);
+  letter-spacing: .02em; margin-top: -6px;
+}
+.hero .price-note { margin: -18px 0 30px; font-size: 16px; color: var(--cloud); }
+.hero .price-note strong { color: var(--sun); font-weight: 700; }

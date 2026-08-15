@@ -29,6 +29,16 @@ Muokkaa HTML:ää → commit → push → Netlify julkaisee automaattisesti (~30
 Muista päivittää molemmat kieliversiot (FI + EN), kun sisältö muuttuu.
 Jos lisäät sivun, lisää se myös `sitemap.xml`-tiedostoon.
 
+## Domainin kytkennan yhteydessa (PAKOLLINEN)
+
+Kun huesky.fi osoittaa tanne, tee molemmat TAI sivusto ei nay Googlessa:
+
+1. `robots.txt`: `Disallow: /` -> `Allow: /`
+2. `netlify.toml`: poista rivi `X-Robots-Tag = "noindex"`
+
+Indeksointi on nyt estetty tarkoituksella, koska canonical-tagit osoittavat
+osoitteeseen www.huesky.fi joka ei viela palvele sisaltoa.
+
 ## Tekemättä (ennen julkaisua)
 
 - Kuvat: hero- ja palvelusivujen kuvat puuttuvat vielä (lisää `img/`-kansioon
