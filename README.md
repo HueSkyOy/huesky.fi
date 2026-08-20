@@ -41,7 +41,8 @@ osoitteeseen www.huesky.fi joka ei viela palvele sisaltoa.
 
 ## Tekemättä (ennen julkaisua)
 
-- Kuvat: hero- ja palvelusivujen kuvat puuttuvat vielä (lisää `img/`-kansioon
-  WebP-muodossa, käytä `loading="lazy"`).
+- Kuvat: etusivun hero-kuva on tehty (`img/hero-bg.webp` + mobiiliversio).
+  Palvelusivujen kuvat puuttuvat vielä (lisää `img/`-kansioon WebP-muodossa,
+  käytä `loading="lazy"`).
 - Favicon ja OG-jakokuva (`og:image`).
 - Portfolio-osio, jos haluat sen mukaan.
