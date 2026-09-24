@@ -1,15 +1,4 @@
-# =====================================================================
-#  HUOM: indeksointi on ESTETTY, koska huesky.fi-domain ei ole vielä
-#  kytketty. Sivuston canonical-tagit osoittavat osoitteeseen
-#  https://www.huesky.fi/ , joka ei tällä hetkellä palvele sisältöä.
-#  Jos esiversio (huesky.netlify.app) indeksoitaisiin nyt, hakukoneet
-#  saisivat ristiriitaisen signaalin.
-#
-#  >>> KUN DOMAIN ON KYTKETTY: vaihda Disallow -> Allow ja poista
-#      X-Robots-Tag netlify.toml-tiedostosta. Muuten sivusto EI NÄY
-#      Googlessa lainkaan.
-# =====================================================================
 User-agent: *
-Disallow: /
+Allow: /
 
-Sitemap: https://www.huesky.fi/sitemap.xml
+Sitemap: https://huesky.fi/sitemap.xml

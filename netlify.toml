@@ -10,8 +10,5 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    # POISTA TAMA RIVI kun huesky.fi-domain on kytketty - muuten sivusto
-    # ei nay Googlessa. Ks. myos robots.txt.
-    X-Robots-Tag = "noindex"
 # CSS:lle ei pitkää cachea: tiedostonimi ei muutu päivitysten yhteydessä,
 # joten Netlifyn oletus (ETag-pohjainen validointi) on oikea ratkaisu.

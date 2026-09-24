@@ -29,15 +29,16 @@ Muokkaa HTML:ää → commit → push → Netlify julkaisee automaattisesti (~30
 Muista päivittää molemmat kieliversiot (FI + EN), kun sisältö muuttuu.
 Jos lisäät sivun, lisää se myös `sitemap.xml`-tiedostoon.
 
-## Domainin kytkennan yhteydessa (PAKOLLINEN)
+## Domain ja indeksointi (tehty 24.9.2026)
 
-Kun huesky.fi osoittaa tanne, tee molemmat TAI sivusto ei nay Googlessa:
+huesky.fi on kytketty ja se on Netlifyn primary domain; www.huesky.fi ohjautuu
+siihen. Indeksointiesto on poistettu: robots.txt sallii indeksoinnin ja
+netlify.tomlin X-Robots-Tag-rivi on poistettu. Canonical-tagit, hreflang,
+og:url ja sitemap osoittavat osoitteeseen https://huesky.fi/ (ilman www).
 
-1. `robots.txt`: `Disallow: /` -> `Allow: /`
-2. `netlify.toml`: poista rivi `X-Robots-Tag = "noindex"`
-
-Indeksointi on nyt estetty tarkoituksella, koska canonical-tagit osoittavat
-osoitteeseen www.huesky.fi joka ei viela palvele sisaltoa.
+Netlify Forms: form detection on kytketty paalle ja sahkoposti-ilmoitus menee
+osoitteeseen ville.launiala@huesky.fi. Jos lomakkeisiin tulee muutoksia,
+muista etta tunnistus tapahtuu vain deployn yhteydessa.
 
 ## Tekemättä (ennen julkaisua)
 
