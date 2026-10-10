@@ -56,6 +56,8 @@ muista etta tunnistus tapahtuu vain deployn yhteydessa.
   10 s looppi. Ladataan vain työpöydällä; mobiilissa ja vähennetyn liikkeen
   asetuksella näkyy pysäytyskuva.
 - `img/galleria/*.webp` (1200 px + `-s` 600 px): palvelusivujen kuvagalleriat.
+- `img/galleria/full/*.webp` (pitkä sivu 2000 px, rajaamaton): lightboxissa avautuvat isot kuvat.
+  Lightbox on `js/lightbox.js`; galleriakuva kääritään linkkiin `<a class="lightbox-link" href="/img/galleria/full/…">`.
 - `img/kortit/*.webp` (800×450): etusivun palvelukorttien kuvat.
 - Kuvat on tehty skriptillä `../kuvat_webp.py` lähdekansiosta
   (`~/Desktop/HueSky-Projects/wwwHueSkyFi`). Skripti rajaa polttopisteen mukaan ja
