@@ -25,6 +25,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="/img/hero/videotuotanto.webp" media="(min-width: 821px)" fetchpriority="high">
+<link rel="preload" as="image" href="/img/hero/videotuotanto-m.webp" media="(max-width: 820px)" fetchpriority="high">
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Video Production", "url": "https://huesky.fi/en/services/video-production/", "description": "Corporate videos from idea to published result: company presentations, testimonials, event coverage and social media videos. Filming and post-production by one maker.", "provider": {"@type": "LocalBusiness", "name": "HueSky Oy", "url": "https://huesky.fi"}, "areaServed": "Etelä-Suomi"}</script>
 </head>
@@ -48,7 +50,10 @@
   </div>
 </header>
 
-<div class="hero hero-sub">
+<div class="hero hero-sub has-photo has-video" style="--hero-img:url('/img/hero/videotuotanto.webp');--hero-img-m:url('/img/hero/videotuotanto-m.webp')">
+  <video class="hero-video" autoplay muted loop playsinline poster="/img/hero/videotuotanto.webp" aria-hidden="true"><source data-src="/img/video/kirsikkapuisto-loop.mp4" type="video/mp4"><source data-src="/img/video/kirsikkapuisto-loop.webm" type="video/webm"></video>
+  <script>(function(){var v=document.querySelector('.hero-video');if(!v)return;if(matchMedia('(max-width: 820px), (prefers-reduced-motion: reduce)').matches){v.remove();return;}v.querySelectorAll('source').forEach(function(s){s.src=s.dataset.src;});v.load();var p=v.play();if(p&&p.catch)p.catch(function(){});})();</script>
+  <div class="hero-shade"></div>
   <div class="container">
     <p class="breadcrumb"><a href="/en/">Home</a> / Video Production</p>
     <span class="kicker">Services</span>
@@ -71,6 +76,12 @@
       <p>Filmed on the Canon R5 Mark II – with DJI Air 3S aerials in the same production when needed. Post-production in DaVinci Resolve Studio: professional editing, color grading and audio under one roof.</p>
       <h2>How it works</h2>
       <p>Brief and script → shoot day(s) → edit for your comments → final polish and delivery in the agreed formats.</p>
+      <h2>Stills from shoots</h2>
+      <div class="gallery">
+        <figure><img src="/img/galleria/video-nyrkkeilysali.webp" srcset="/img/galleria/video-nyrkkeilysali-s.webp 600w, /img/galleria/video-nyrkkeilysali.webp 1200w" sizes="(max-width: 640px) 50vw, 260px" width="1200" height="800" loading="lazy" decoding="async" alt="Coach holding pads for a boxer in front of a graffiti wall."><figcaption>Boxing gym</figcaption></figure>
+        <figure><img src="/img/galleria/video-puisto-ylhaalta.webp" srcset="/img/galleria/video-puisto-ylhaalta-s.webp 600w, /img/galleria/video-puisto-ylhaalta.webp 1200w" sizes="(max-width: 640px) 50vw, 260px" width="1200" height="800" loading="lazy" decoding="async" alt="Stone-lined creek and footbridge seen from a drone."><figcaption>Park video, aerial</figcaption></figure>
+        <figure><img src="/img/galleria/video-puisto-maataso.webp" srcset="/img/galleria/video-puisto-maataso-s.webp 600w, /img/galleria/video-puisto-maataso.webp 1200w" sizes="(max-width: 640px) 50vw, 260px" width="1200" height="800" loading="lazy" decoding="async" alt="Low-angle shot from a stone bench toward daffodils and trees."><figcaption>Park video, ground level</figcaption></figure>
+      </div>
       <p class="page-cta"><a class="btn btn-primary" href="/en/#contact">Request a quote →</a></p>
     </div>
   </div>

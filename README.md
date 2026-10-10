@@ -43,7 +43,20 @@ muista etta tunnistus tapahtuu vain deployn yhteydessa.
 ## Tekemättä (ennen julkaisua)
 
 - Kuvat: etusivun hero-kuva on tehty (`img/hero-bg.webp` + mobiiliversio).
-  Palvelusivujen kuvat puuttuvat vielä (lisää `img/`-kansioon WebP-muodossa,
-  käytä `loading="lazy"`).
+  Palvelusivujen kuvat lisätty 10.10.2026 (ks. Kuvat alla).
 - Favicon ja OG-jakokuva (`og:image`).
 - Portfolio-osio, jos haluat sen mukaan.
+
+## Kuvat (lisätty 10.10.2026)
+
+- `img/hero/<palvelu>.webp` (1920×960) ja `<palvelu>-m.webp` (900×1098): palvelusivujen
+  yläosan taustat. Sivulla `class="hero hero-sub has-photo"` ja inline-muuttujat
+  `--hero-img` / `--hero-img-m`.
+- `img/video/kirsikkapuisto-loop.mp4` (+ `.webm` varalle): videotuotannon yläosan
+  10 s looppi. Ladataan vain työpöydällä; mobiilissa ja vähennetyn liikkeen
+  asetuksella näkyy pysäytyskuva.
+- `img/galleria/*.webp` (1200 px + `-s` 600 px): palvelusivujen kuvagalleriat.
+- `img/kortit/*.webp` (800×450): etusivun palvelukorttien kuvat.
+- Kuvat on tehty skriptillä `../kuvat_webp.py` lähdekansiosta
+  (`~/Desktop/HueSky-Projects/wwwHueSkyFi`). Skripti rajaa polttopisteen mukaan ja
+  poistaa EXIF/GPS-tiedot. Uuden kuvan voi lisätä skriptin listoihin ja ajaa sen uudelleen.
