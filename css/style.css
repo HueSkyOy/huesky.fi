@@ -631,7 +631,7 @@ html.lb-open, html.lb-open body { overflow: hidden; }
   border-top-color: var(--sun); box-shadow: var(--shadow); position: relative;
 }
 .compare-card.featured::after {
-  content: "Valituin"; position: absolute; top: -12px; right: 18px;
+  content: attr(data-badge); position: absolute; top: -12px; right: 18px;
   background: var(--grad); color: var(--night);
   font-family: "Outfit", sans-serif; font-size: 11.5px; font-weight: 800;
   letter-spacing: .08em; text-transform: uppercase;
