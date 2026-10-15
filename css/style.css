@@ -615,3 +615,27 @@ html.lb-open, html.lb-open body { overflow: hidden; }
   .lb-prev { left: calc(50% - 60px); }
   .lb-next { right: calc(50% - 60px); }
 }
+
+/* ---------- Pakettikortit (palvelusivut) ---------- */
+.compare-cards.pricing .compare-card { display: flex; flex-direction: column; }
+.compare-card .pkg-price {
+  display: block; margin: 2px 0 8px;
+  font-family: "Outfit", sans-serif; font-weight: 800; font-size: 30px; line-height: 1.1;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.compare-card ul { margin: 4px 0 14px; padding-left: 20px; }
+.compare-card li { font-size: 15px; margin-bottom: 7px; }
+.compare-card li::marker { color: var(--primary); }
+.compare-card .fits { font-size: 14px; color: var(--ink-soft); margin: auto 0 0; }
+.compare-card.featured {
+  border-top-color: var(--sun); box-shadow: var(--shadow); position: relative;
+}
+.compare-card.featured::after {
+  content: "Valituin"; position: absolute; top: -12px; right: 18px;
+  background: var(--grad); color: var(--night);
+  font-family: "Outfit", sans-serif; font-size: 11.5px; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: 4px 11px; border-radius: 999px;
+}
+.pkg-note { font-size: 14.5px; color: var(--ink-soft); margin-top: 18px; }
+@media (max-width: 900px) { .compare-card.featured { order: -1; } }
