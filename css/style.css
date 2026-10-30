@@ -541,6 +541,7 @@ form textarea { min-height: 130px; resize: vertical; }
   border-radius: var(--radius); background: var(--mist);
 }
 .gallery.portrait img { aspect-ratio: 2 / 3; }
+.gallery img.fit { object-fit: contain; } /* muut kuin 3:2-kuvat kokonaisina, tausta var(--mist) */
 .gallery figcaption { margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--ink-soft); }
 
 /* ---------- Palvelukorttien kuvat (etusivu) ---------- */
