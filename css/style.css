@@ -6,6 +6,14 @@
    Aurinkolasku #F4A340 · Vaalea #F0F7FF
    ============================================ */
 
+/* Fontit omalta palvelimelta (fonts/, SIL Open Font License).
+   Googlen fonttipalvelu hidasti mobiilin ensimmäistä näkymää ~0,7 s. */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Outfit"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/outfit-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Outfit"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/outfit-latin-800-normal.woff2") format("woff2"); }
+
 :root {
   --night: #0A0E27;        /* Yötaivas */
   --dusk: #0D1F5C;         /* Hämärä */
@@ -14,6 +22,8 @@
   --sky: #5BB8F5;          /* Taivaansininen */
   --cloud: #A8DCF7;        /* Pilvi */
   --sun: #F4A340;          /* Aurinkolasku */
+  --primary-text: #2772C0; /* Primary pienelle tekstille vaalealla pohjalla (kontrasti ≥ 4,5:1) */
+  --sun-text: #A6600A;     /* Aurinkolasku pienelle tekstille vaalealla pohjalla (≥ 4,5:1) */
   --pale: #F0F7FF;         /* Vaalea */
 
   --ink: #0A0E27;
@@ -101,6 +111,7 @@ a:hover { text-decoration: underline; }
 .main-nav a { color: var(--cloud); font-size: 15px; font-weight: 500; transition: color .15s ease; }
 .main-nav a:hover { color: #fff; text-decoration: none; }
 .main-nav .btn { padding: 9px 20px; font-size: 14px; }
+.main-nav .btn-primary, .main-nav .btn-primary:hover { color: #fff; } /* muuten .main-nav a värjää napin tekstin vaaleansiniseksi */
 
 .nav-phone { font-variant-numeric: tabular-nums; opacity: .85; }
 
@@ -209,7 +220,7 @@ section.alt { background: var(--mist); }
 .kicker {
   display: inline-flex; align-items: center; gap: 10px;
   font-size: 13px; font-weight: 700;
-  letter-spacing: .16em; text-transform: uppercase; color: var(--primary);
+  letter-spacing: .16em; text-transform: uppercase; color: var(--primary-text);
   margin-bottom: 14px;
 }
 .kicker::before {
@@ -244,7 +255,7 @@ section.alt { background: var(--mist); }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--cloud); text-decoration: none; }
 .card:hover::before { transform: scaleX(1); }
 a.card { color: inherit; }
-.card .num { font-family: "Outfit", sans-serif; font-weight: 800; color: var(--primary); font-size: 15px; }
+.card .num { font-family: "Outfit", sans-serif; font-weight: 800; color: var(--primary-text); font-size: 15px; }
 .card h3 { font-size: 21px; }
 .card p { color: var(--ink-soft); font-size: 15.5px; flex-grow: 1; }
 .card .tags { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -252,7 +263,7 @@ a.card { color: inherit; }
   font-size: 12.5px; font-weight: 600; color: var(--deep);
   background: rgba(91,184,245,.14); border-radius: 999px; padding: 4px 11px;
 }
-.card .more { font-weight: 600; font-size: 15px; color: var(--primary); }
+.card .more { font-weight: 600; font-size: 15px; color: var(--primary-text); }
 
 /* ---------- Tietoa ---------- */
 .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 56px; align-items: start; margin-top: 12px; }
@@ -323,7 +334,7 @@ a.card { color: inherit; }
 .compare-card:nth-child(2) { border-top-color: var(--sky); }
 .compare-card:nth-child(3) { border-top-color: var(--sun); }
 .compare-card h3 { font-size: 19px; margin-bottom: 4px; }
-.compare-card .tagline { font-size: 13.5px; font-weight: 600; color: var(--primary); margin-bottom: 12px; display: block; }
+.compare-card .tagline { font-size: 13.5px; font-weight: 600; color: var(--primary-text); margin-bottom: 12px; display: block; }
 .compare-card p { font-size: 15px; margin-bottom: 12px; }
 
 /* Vertailutaulukko */
@@ -450,7 +461,7 @@ form textarea { min-height: 130px; resize: vertical; }
 
 /* ---------- Hinnat ---------- */
 .card-price {
-  font-size: 14px; font-weight: 700; color: var(--sun);
+  font-size: 14px; font-weight: 700; color: var(--sun-text);
   letter-spacing: .02em; margin-top: -6px;
 }
 .hero .price-note { margin: -18px 0 30px; font-size: 16px; color: var(--cloud); }

@@ -12,3 +12,9 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 # CSS:lle ei pitkää cachea: tiedostonimi ei muutu päivitysten yhteydessä,
 # joten Netlifyn oletus (ETag-pohjainen validointi) on oikea ratkaisu.
+
+# Fonttitiedostot eivät muutu, joten niille pitkä cache.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

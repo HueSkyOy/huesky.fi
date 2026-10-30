@@ -62,3 +62,11 @@ muista etta tunnistus tapahtuu vain deployn yhteydessa.
 - Kuvat on tehty skriptillä `../kuvat_webp.py` lähdekansiosta
   (`~/Desktop/HueSky-Projects/wwwHueSkyFi`). Skripti rajaa polttopisteen mukaan ja
   poistaa EXIF/GPS-tiedot. Uuden kuvan voi lisätä skriptin listoihin ja ajaa sen uudelleen.
+
+## Fontit
+
+Inter (400, 500, 600) ja Outfit (700, 800) ladataan omalta palvelimelta
+kansiosta `fonts/` (woff2, latin-merkistö, SIL Open Font License – lisenssit
+samassa kansiossa). Googlen fonttipalvelua ei käytetä: se hidasti mobiilin
+ensimmäistä näkymää noin 0,7 s ja välitti kävijöiden IP-osoitteet Googlelle.
+Uudelle painolle lisätään `@font-face` tiedoston `css/style.css` alkuun.
