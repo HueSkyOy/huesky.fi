@@ -1,5 +1,6 @@
 /* HueSky – galleriakuvien lightbox.
    Klikkaus avaa kuvan isona. Nuolet, Esc ja pyyhkäisy toimivat.
+   Kuvatekstin linkit (esim. YouTube) toimivat myös isossa näkymässä.
    Ilman JavaScriptiä linkki avaa ison kuvan sellaisenaan. */
 (function () {
   var links = Array.prototype.slice.call(document.querySelectorAll('.gallery a.lightbox-link'));
@@ -44,7 +45,8 @@
     var fc = a.closest('figure').querySelector('figcaption');
     img.src = a.href;
     img.alt = thumb ? thumb.alt : '';
-    cap.textContent = fc ? fc.textContent : '';
+    cap.textContent = '';
+    if (fc) Array.prototype.forEach.call(fc.childNodes, function (n) { cap.appendChild(n.cloneNode(true)); });
     count.textContent = group.length > 1 ? (idx + 1) + ' / ' + group.length : '';
     box.classList.toggle('lb-single', group.length < 2);
     preload(idx + 1); preload(idx - 1);
@@ -83,7 +85,7 @@
     else if (e.key === 'ArrowRight') { show(idx + 1); }
     else if (e.key === 'ArrowLeft') { show(idx - 1); }
     else if (e.key === 'Tab') {
-      var f = Array.prototype.slice.call(box.querySelectorAll('button')).filter(function (b) {
+      var f = Array.prototype.slice.call(box.querySelectorAll('button, a[href]')).filter(function (b) {
         return b.offsetParent !== null;
       });
       if (!f.length) return;

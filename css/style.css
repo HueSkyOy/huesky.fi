@@ -542,17 +542,8 @@ form textarea { min-height: 130px; resize: vertical; }
 }
 .gallery.portrait img { aspect-ratio: 2 / 3; }
 .gallery img.fit { object-fit: contain; } /* muut kuin 3:2-kuvat kokonaisina, tausta var(--mist) */
-/* YouTube-video klikkauksella: kansikuva ensin, YouTube ladataan vasta toistosta (js/youtube.js) */
-.yt-video { margin: 20px 0 8px; max-width: 560px; }
-.yt-facade, .yt-frame { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: var(--radius); overflow: hidden; }
-.yt-facade { position: relative; padding: 0; cursor: pointer; background: var(--night); }
-.yt-facade img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease, filter .35s ease; }
-.yt-facade:hover img, .yt-facade:focus-visible img { transform: scale(1.03); filter: brightness(1.06); }
-.yt-facade:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
-.yt-play { position: absolute; left: 50%; top: 50%; width: 68px; height: 48px; margin: -24px 0 0 -34px; border-radius: 14px; background: rgba(10,14,39,.78); transition: background .2s ease; }
-.yt-play::before { content: ""; position: absolute; left: 27px; top: 14px; border-style: solid; border-width: 10px 0 10px 17px; border-color: transparent transparent transparent #fff; }
-.yt-facade:hover .yt-play, .yt-facade:focus-visible .yt-play { background: var(--primary); }
-.yt-video figcaption { margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--ink-soft); }
+.gallery figcaption a { font-weight: 600; }
+.lb-caption a { color: #fff; text-decoration: underline; }
 .gallery figcaption { margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--ink-soft); }
 
 /* ---------- Palvelukorttien kuvat (etusivu) ---------- */
