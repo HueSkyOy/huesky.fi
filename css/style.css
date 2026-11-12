@@ -653,3 +653,11 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 }
 .pkg-note { font-size: 14.5px; color: var(--ink-soft); margin-top: 18px; }
 @media (max-width: 900px) { .compare-card.featured { order: -1; } }
+
+/* ---------- Jatkuvat palvelut: kaksi korttia rinnakkain ---------- */
+.compare-cards.cols-2 { grid-template-columns: repeat(2, 1fr); max-width: 880px; }
+@media (max-width: 900px) { .compare-cards.cols-2 { grid-template-columns: 1fr; } }
+
+/* Tekstin sisäiset linkit erottuvat muustakin kuin väristä (WCAG 1.4.1, axe link-in-text-block) */
+.page-body p a:not(.btn), .page-body li a, .pkg-note a { text-decoration: underline; text-underline-offset: 3px; }
+.page-body > h3 { margin-top: 36px; }
