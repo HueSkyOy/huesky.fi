@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://huesky.fi/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://huesky.fi/en/</loc><lastmod>2026-11-20</lastmod></url>
-  <url><loc>https://huesky.fi/palvelut/videotuotanto/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://huesky.fi/en/services/video-production/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://huesky.fi/palvelut/videotuotanto/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://huesky.fi/en/services/video-production/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://huesky.fi/palvelut/valokuvaus/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://huesky.fi/en/services/photography/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://huesky.fi/palvelut/dronekuvaus/</loc><lastmod>2026-11-20</lastmod></url>
@@ -16,4 +16,6 @@
   <url><loc>https://huesky.fi/en/services/graphic-design/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://huesky.fi/tyot/cafe-tirkku/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://huesky.fi/en/work/cafe-tirkku/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://huesky.fi/tyot/amisfits/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://huesky.fi/en/work/amisfits/</loc><lastmod>2026-11-20</lastmod></url>
 </urlset>

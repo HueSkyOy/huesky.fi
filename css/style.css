@@ -682,6 +682,7 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 .gallery.wide { max-width: none; }
 .compare-table.scores { max-width: 520px; }
 .compare-table.scores td, .compare-table.scores thead th:not(:first-child) { text-align: center; }
-@media (max-width: 700px) { .compare-table.scores { min-width: 0; } }
+.compare-table.counts { max-width: 640px; }
+@media (max-width: 700px) { .compare-table.scores, .compare-table.counts { min-width: 0; } }
 .compare-card .case-link { margin: 12px 0 0; font-size: 14.5px; font-weight: 600; }
 .case-link a { text-decoration: underline; text-underline-offset: 3px; }
