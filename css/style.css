@@ -660,4 +660,28 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 
 /* Tekstin sisäiset linkit erottuvat muustakin kuin väristä (WCAG 1.4.1, axe link-in-text-block) */
 .page-body p a:not(.btn), .page-body li a, .pkg-note a { text-decoration: underline; text-underline-offset: 3px; }
-.page-body > h3 { margin-top: 36px; }
+.page-body > h3 { margin-top: 36px; margin-bottom: 8px; }
+
+/* ---------- Asiakastyöt (case-sivut) ---------- */
+.page-body .case-intro { font-size: 18px; color: var(--ink); }
+.case-facts {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 28px;
+  margin: 26px 0 8px; padding: 22px 26px;
+  background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--primary);
+  border-radius: var(--radius);
+}
+.case-facts dt {
+  font-family: "Outfit", sans-serif; font-size: 12px; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--primary-text);
+}
+.case-facts dd { margin: 2px 0 0; color: var(--ink); font-size: 15.5px; }
+.case-facts a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) { .case-facts { grid-template-columns: 1fr; } }
+.gallery.cols-1 { grid-template-columns: 1fr; margin-top: 24px; }
+.gallery.cols-1 figcaption { font-size: 14px; }
+.gallery.wide { max-width: none; }
+.compare-table.scores { max-width: 520px; }
+.compare-table.scores td, .compare-table.scores thead th:not(:first-child) { text-align: center; }
+@media (max-width: 700px) { .compare-table.scores { min-width: 0; } }
+.compare-card .case-link { margin: 12px 0 0; font-size: 14.5px; font-weight: 600; }
+.case-link a { text-decoration: underline; text-underline-offset: 3px; }
