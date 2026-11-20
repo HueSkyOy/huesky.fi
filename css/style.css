@@ -686,3 +686,18 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 @media (max-width: 700px) { .compare-table.scores, .compare-table.counts { min-width: 0; } }
 .compare-card .case-link { margin: 12px 0 0; font-size: 14.5px; font-weight: 600; }
 .case-link a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Asiakastyöt etusivulla: tumma nosto ---------- */
+.showcase {
+  background:
+    radial-gradient(760px 360px at 92% -8%, rgba(91,184,245,.22), transparent 60%),
+    var(--grad-night);
+  color: var(--pale);
+}
+.showcase .section-title { color: #fff; }
+.showcase .section-lead { color: var(--cloud); }
+.showcase .kicker { color: var(--sun); }
+.showcase .kicker::before { background: linear-gradient(90deg, var(--sun), var(--cloud)); }
+.showcase .card { color: var(--ink); }
+.case-card .client { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary-text); }
+.page-body .case-more { margin-top: 28px; font-size: 15px; }
