@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HueSky Oy – Videotuotanto, valokuvaus, dronekuvaus, striimaus ja verkkosivut | Helsinki</title>
+<title>HueSky Oy – Videotuotanto, valokuvaus ja verkkosivut | Helsinki</title>
 <meta name="description" content="Luova tuotanto yhdeltä kumppanilta: video, valokuva, drone, striimaus, verkkosivut ja graafinen suunnittelu. Yli 27 vuoden kokemus. Helsinki ja Etelä-Suomi.">
 <link rel="canonical" href="https://huesky.fi/">
 <link rel="alternate" hreflang="fi" href="https://huesky.fi/">
@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://huesky.fi/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HueSky Oy">
-<meta property="og:title" content="HueSky Oy – Videotuotanto, valokuvaus, dronekuvaus, striimaus ja verkkosivut | Helsinki">
+<meta property="og:title" content="HueSky Oy – Videotuotanto, valokuvaus ja verkkosivut | Helsinki">
 <meta property="og:description" content="Luova tuotanto yhdeltä kumppanilta: video, valokuva, drone, striimaus, verkkosivut ja graafinen suunnittelu. Yli 27 vuoden kokemus. Helsinki ja Etelä-Suomi.">
 <meta property="og:url" content="https://huesky.fi/">
 <meta property="og:locale" content="fi_FI">
@@ -27,7 +27,7 @@
 <link rel="preload" as="image" href="/img/hero-bg.webp" media="(min-width: 821px)" fetchpriority="high">
 <link rel="preload" as="image" href="/img/hero-bg-mobile.webp" media="(max-width: 820px)" fetchpriority="high">
 <link rel="stylesheet" href="/css/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "HueSky Oy", "url": "https://huesky.fi", "email": "ville.launiala@huesky.fi", "telephone": "+358405070061", "founder": {"@type": "Person", "name": "Ville Launiala"}, "address": {"@type": "PostalAddress", "addressLocality": "Helsinki", "addressCountry": "FI"}, "areaServed": "Etelä-Suomi", "description": "Videotuotanto, valokuvaus, dronekuvaus, striimaus, verkkosivut ja graafinen suunnittelu pk-yrityksille."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "HueSky Oy", "url": "https://huesky.fi", "email": "ville.launiala@huesky.fi", "telephone": "+358405070061", "founder": {"@type": "Person", "name": "Ville Launiala"}, "address": {"@type": "PostalAddress", "addressLocality": "Helsinki", "addressCountry": "FI"}, "areaServed": "Etelä-Suomi", "description": "Videotuotanto, valokuvaus, dronekuvaus, striimaus, verkkosivut ja graafinen suunnittelu pk-yrityksille.", "image": "https://huesky.fi/og-image.png", "logo": "https://huesky.fi/apple-touch-icon.png", "priceRange": "€€"}</script>
 </head>
 <body>
 <header class="site-header">
@@ -38,9 +38,9 @@
     </button>
     <nav class="main-nav">
       <a href="/#palvelut">Palvelut</a>
+      <a href="/#tyot">Asiakastyöt</a>
+      <a href="/#yhdistelmat">Hinnat</a>
       <a href="/#tietoa">Tietoa</a>
-      <a href="/#matka">Tausta</a>
-      <a href="/#prosessi">Prosessi</a>
       <a href="/#yhteys">Yhteystiedot</a>
       <a class="nav-phone" href="tel:+358405070061">040 507 0061</a>
       <a class="lang-switch" href="/en/" hreflang="en">EN</a>
@@ -162,6 +162,7 @@
         <span class="more">Lue tapaus →</span>
       </a>
     </div>
+    <p class="section-cta"><a class="btn btn-primary" href="#yhteys">Kerro omasta projektistasi →</a></p>
   </div>
 </section>
 
@@ -197,6 +198,7 @@
       </div>
     </div>
     <p class="pkg-note">Yhdistelmäetu koskee kaikkia projektipaketteja, ei vain näitä esimerkkejä. Hinnat alv 0 %. Kerro, mitä tarvitset, niin lasken hinnan.</p>
+    <p class="section-cta"><a class="btn btn-primary" href="#yhteys">Pyydä tarjous yhdistelmästä →</a></p>
   </div>
 </section>
 
@@ -400,6 +402,7 @@
         <div class="field"><label for="nimi">Nimi</label><input id="nimi" name="nimi" type="text" required autocomplete="name"></div>
         <div class="field"><label for="email">Sähköposti</label><input id="email" name="email" type="email" required autocomplete="email"></div>
         <div class="field"><label for="palvelu">Palvelu</label><select id="palvelu" name="palvelu">
+          <option value="" selected disabled>Valitse palvelu</option>
           <option>Videotuotanto</option>
           <option>Valokuvaus</option>
           <option>Dronekuvaus</option>
@@ -430,6 +433,9 @@
 <script>
 var t=document.querySelector('.nav-toggle'),n=document.querySelector('.main-nav');
 t.addEventListener('click',function(){n.classList.toggle('open');t.setAttribute('aria-expanded',n.classList.contains('open'))});
+</script>
+<script>
+(function(){var q=new URLSearchParams(location.search).get('palvelu'),s=document.getElementById('palvelu');if(!q||!s)return;for(var i=0;i<s.options.length;i++){if(s.options[i].text===q){s.selectedIndex=i;break;}}})();
 </script>
 </body>
 </html>

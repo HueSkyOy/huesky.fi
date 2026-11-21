@@ -81,7 +81,7 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
-.btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 14px rgba(45,127,212,.25); }
+.btn-primary { background: var(--primary-text); color: #fff; box-shadow: 0 4px 14px rgba(45,127,212,.25); }
 .btn-primary:hover { background: var(--deep); box-shadow: var(--glow); }
 .btn-ghost { border-color: rgba(168,220,247,.5); color: var(--pale); }
 .btn-ghost:hover { border-color: var(--cloud); background: rgba(91,184,245,.12); }
@@ -140,6 +140,7 @@ a:hover { text-decoration: underline; }
   .main-nav.open { display: flex; }
   .main-nav a { padding: 10px 0; font-size: 17px; width: 100%; }
   .main-nav .btn { margin-top: 8px; }
+  .main-nav .lang-switch { width: auto; padding: 6px 14px; margin-top: 6px; }
 }
 
 /* ---------- Hero: yötaivas tähtineen ---------- */
@@ -701,3 +702,17 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 .showcase .card { color: var(--ink); }
 .case-card .client { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary-text); }
 .page-body .case-more { margin-top: 28px; font-size: 15px; }
+
+/* ---------- Osion lopun toimintakehotus ---------- */
+.section-cta { margin-top: 32px; }
+
+/* Kosketusalueet: esimerkkilinkit ja mobiilin yhteystiedot */
+.case-link a { display: inline-block; padding: 10px 0; }
+@media (max-width: 860px) {
+  .contact-info dd a {
+    display: inline-flex; align-items: center; min-height: 48px;
+    padding: 10px 18px; margin-top: 6px; font-size: 16px;
+    border: 1px solid rgba(91,184,245,.45); border-radius: 999px;
+    background: rgba(240,247,255,.06);
+  }
+}
